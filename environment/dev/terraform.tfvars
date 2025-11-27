@@ -1,4 +1,4 @@
-subscription_id = "9d6d920b-b901-4221-9c6a-c3663af809a6"
+subscription_id = "e4489957-2c09-442f-936c-3a4283afbde9"
 
 resource_groups = {
   "rg-1" = {
@@ -6,13 +6,13 @@ resource_groups = {
     location = "central india"
   }
   "rg-2" = {
-    name     = "dhiraj-resource-group2"
-    location = "central india"
+    name       = "dhiraj-resource-group2"
+    location   = "central india"
     managed_by = "dhiraj"
-    tags     = {
+    tags = {
       environment = "dev"
       owner       = "dhiraj"
-} }}
+} } }
 
 storage_accounts = {
   "stg-1" = {
@@ -224,7 +224,7 @@ key_vaults = {
     }]
   }
 
-kv2 = {
+  kv2 = {
     name                = "dhirajkv9304936"
     resource_group_name = "dhiraj-resource-group2"
     location            = "central india"
@@ -294,23 +294,23 @@ mssql_servers = {
 
 mssql_databases = {
   db1 = {
-    name                 = "dhiraj-mssql-database1"
-    server_name          = "dhiraj-mssql-server1"
-    resource_group_name  = "dhiraj-resource-group1"
-    collation            = "SQL_Latin1_General_CP1_CI_AS"
-    license_type         = "BasePrice"
+    name                = "dhiraj-mssql-database1"
+    server_name         = "dhiraj-mssql-server1"
+    resource_group_name = "dhiraj-resource-group1"
+    collation           = "SQL_Latin1_General_CP1_CI_AS"
+    license_type        = "BasePrice"
     max_size_gb         = 10
-    sku_name             = "S0"
-    enclave_type         = "Default"
+    sku_name            = "S0"
+    enclave_type        = "Default"
   }
   db2 = {
-    name                 = "dhiraj-mssql-database2"
-    server_name          = "dhiraj-mssql-server2"
-    resource_group_name  = "dhiraj-resource-group2"
-    collation            = "SQL_Latin1_General_CP1_CI_AS"
-    license_type         = "BasePrice"
+    name                = "dhiraj-mssql-database2"
+    server_name         = "dhiraj-mssql-server2"
+    resource_group_name = "dhiraj-resource-group2"
+    collation           = "SQL_Latin1_General_CP1_CI_AS"
+    license_type        = "BasePrice"
     max_size_gb         = 20
-    sku_name             = "S1"
-    enclave_type         = "Default"
+    sku_name            = "S1"
+    enclave_type        = "Default"
   }
 }
